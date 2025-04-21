@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --box-bg: #fff;
+    --button-bg: #28a745;
+    --button-hover: #218838;
+  }
+  
+  body.dark {
+    --bg-color: #121212;
+    --text-color: #eee;
+    --box-bg: #1e1e1e;
+    --button-bg: #444;
+    --button-hover: #666;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  #darkModeToggle {
+    padding: 5px 15px;
+    font-size: 14px;
+    border: none;
+    background: var(--button-bg);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #darkModeToggle:hover {
+    background: var(--button-hover);
+  }
+  
+  .auswahl {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .dropdown-container {
+    width: 30%;
+    min-width: 280px;
+    margin: 10px;
+  }
+  
+  .einheit-anzeige {
+    margin-top: 10px;
+    padding: 10px;
+    background: var(--box-bg);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .einheit-anzeige img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .einheit-anzeige input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: var(--button-bg);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: var(--button-hover);
+  }
+  
+  .armee-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .armee-einheit {
+    text-align: center;
+    background: var(--box-bg);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  }
+  
+  .armee-einheit img {
+    width: 60px;
+    display: block;
+    margin: auto;
+  }
+  

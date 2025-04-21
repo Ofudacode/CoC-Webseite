@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Clash of Clans Armee Planer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Clash of Clans • Armee Planer</h1>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <div class="auswahl">
+    <div class="dropdown-container">
+      <label for="truppen">Truppen:</label>
+      <select id="truppen"></select>
+      <div id="truppen-anzeige" class="einheit-anzeige"></div>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="zauber">Zauber:</label>
+      <select id="zauber"></select>
+      <div id="zauber-anzeige" class="einheit-anzeige"></div>
+    </div>
+
+    <div class="dropdown-container">
+      <label for="helden">Helden:</label>
+      <select id="helden"></select>
+      <div id="helden-anzeige" class="einheit-anzeige"></div>
+    </div>
+  </div>
+
+  <h2>🎯 Deine Armee</h2>
+  <div id="armee" class="armee-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
