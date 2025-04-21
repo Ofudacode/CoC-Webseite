@@ -8,14 +8,22 @@ window.onload = async function () {
   setupDropdown("zauber", daten.zauber);
   setupDropdown("helden", daten.helden);
 
-  // Dark Mode Zustand laden
-  if (localStorage.getItem("darkMode") === "true") {
+  // Dark Mode laden
+  const darkToggle = document.getElementById("darkModeToggle");
+  const darkSetting = localStorage.getItem("darkMode");
+
+  if (darkSetting === "true") {
     document.body.classList.add("dark");
+    darkToggle.textContent = "☀️ Light Mode";
+  } else {
+    darkToggle.textContent = "🌙 Dark Mode";
   }
 
-  document.getElementById("darkModeToggle").addEventListener("click", () => {
+  darkToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-    localStorage.setItem("darkMode", document.body.classList.contains("dark"));
+    const isDark = document.body.classList.contains("dark");
+    localStorage.setItem("darkMode", isDark);
+    darkToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
   });
 };
 
